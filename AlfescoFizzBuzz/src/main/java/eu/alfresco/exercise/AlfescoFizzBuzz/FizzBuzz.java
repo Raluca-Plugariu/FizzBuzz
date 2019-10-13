@@ -9,15 +9,18 @@ import java.util.stream.IntStream;
 @Component
 public class FizzBuzz {
 
-    public String printResultForStepOne(FizzRange fizzRange){
-       return IntStream.rangeClosed(fizzRange.getMin(),fizzRange.getMax())
+    public String printResultForStepTwo(FizzRange fizzRange) {
+        return IntStream.rangeClosed(fizzRange.getMin(), fizzRange.getMax())
                 .mapToObj(this::compute)
                 .collect(Collectors.joining(" "));
     }
 
     private String compute(@NonNull Integer x) {
-        StringBuilder sb = new StringBuilder();
+        if (x.toString().contains("3")) {
+            return "alfresco";
+        }
 
+        StringBuilder sb = new StringBuilder();
         if (x % 3 == 0) {
             sb.append("fizz");
         }
@@ -30,6 +33,7 @@ public class FizzBuzz {
         }
 
         return sb.toString();
+
     }
 
 
