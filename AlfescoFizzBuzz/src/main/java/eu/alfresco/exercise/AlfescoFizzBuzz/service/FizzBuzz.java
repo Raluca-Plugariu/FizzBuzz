@@ -1,6 +1,6 @@
 package eu.alfresco.exercise.AlfescoFizzBuzz.service;
 
-import eu.alfresco.exercise.AlfescoFizzBuzz.FizzRange;
+import eu.alfresco.exercise.AlfescoFizzBuzz.dto.FizzRange;
 import eu.alfresco.exercise.AlfescoFizzBuzz.FizzReport;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.lang.NonNull;

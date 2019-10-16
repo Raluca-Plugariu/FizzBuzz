@@ -1,5 +1,6 @@
 package eu.alfresco.exercise.AlfescoFizzBuzz;
 
+import eu.alfresco.exercise.AlfescoFizzBuzz.dto.FizzRange;
 import eu.alfresco.exercise.AlfescoFizzBuzz.service.FizzBuzz;
 import org.junit.Before;
 import org.junit.Test;

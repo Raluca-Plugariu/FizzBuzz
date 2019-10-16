@@ -1,6 +1,8 @@
-package eu.alfresco.exercise.AlfescoFizzBuzz;
+package eu.alfresco.exercise.AlfescoFizzBuzz.dto;
 
-public class FizzRange {
+import java.io.Serializable;
+
+public class FizzRange implements Serializable {
 
     /**
      * Lower limit of fizz range.
@@ -15,6 +17,10 @@ public class FizzRange {
     public FizzRange(int min, int max) {
         this.min = min;
         this.max = max;
+    }
+
+    public FizzRange() {
+
     }
 
     public int getMin() {
